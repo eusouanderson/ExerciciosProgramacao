@@ -9,3 +9,11 @@ Dificuldade: Principiante
 2 - Caso o número seja par, exibir a mensagem no console "O número {numero} é par.";
 3 - Caso contrário, exibir a mensagem "O número {numero} é ímpar.".
 """
+
+def number(number):
+    if number % 2 == 0:
+        print(f"O número {number} é par.")
+    else:
+        print(f"O número {number} é ímpar.")
+    
+number(int(input("Digite um número: ")))

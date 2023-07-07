@@ -11,10 +11,9 @@ anos de idade e é do gênero {genero}.
 Já pensou no que você fará no seu aniversário de {idade + 1} anos?".
 """
 
-nome = str(input("Qual é o seu nome? "))
+let Nome = "Anderson"
+let Idade = 21
+let Genero = "M"
+let Aniversario = 22
 
-idade = int(input("Quantos anos você tem? "))
-
-genero = str(input("Qual é o seu gênero? (Escreva por extenso, exemplo: masculino) "))
-
-print(f"Olá, {nome}, você possui {idade} anos de idade e é do gênero {genero}. Já pensou no que você fará no seu aniversário de {idade + 1} anos?")
+printfn "Olá, %s, você possui %i anos de idade e é do gênero %s." Nome Idade Genero

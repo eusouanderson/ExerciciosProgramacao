@@ -23,3 +23,12 @@ Caso você tenha importado apenas com 'import datetime', você precisará declar
 
 Você também pode criar uma data personalizada sem informar a hora, minuto e segundo, apenas informando os três primeiros parâmetros.
 """
+from datetime import datetime
+
+data_atual = datetime.now()
+
+hour = data_atual.hour
+min = data_atual.minute
+secon = data_atual.second
+
+print(f" Data e Hora: {data_atual.day}/{data_atual.month}/{data_atual.year} - {hour}h{min}:{secon}")
