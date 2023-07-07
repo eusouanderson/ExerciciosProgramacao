@@ -1,4 +1,4 @@
-﻿"""
+﻿/*
 Exercício 2
 
 Nome: Formatar Números
@@ -13,11 +13,12 @@ Dificuldade: Principiante
 6 - Aplique devidamente a formatação dos centavos para cada variável numérica, utilizando a regra: {:.2f}.
 
 Observação: Desenvolva o programa de uma forma que, se alterarmos os valores das variáveis, ele altere automaticamente a exibição do texto na tela, atualizando os valores.
-"""
+*/
 
-total_conta = 82.57
-valor_pago = 100
-troco = valor_pago - total_conta
+let total_conta = 82.57;
+let valor_pago = 100;
 
-print("Total do troco que você deve receber é R$ {:.2f}".format(troco))
+let troco = valor_pago - total_conta;
 
+console.log("Troco: R$ " + troco.toFixed(2));
+console.log(`O total da conta foi de R$ ${total_conta}, você pagou R$ ${valor_pago} e o seu troco foi de R$ ${troco.toFixed(2)}.`)

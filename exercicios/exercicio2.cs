@@ -1,4 +1,4 @@
-﻿"""
+﻿/*
 Exercício 2
 
 Nome: Formatar Números
@@ -13,11 +13,22 @@ Dificuldade: Principiante
 6 - Aplique devidamente a formatação dos centavos para cada variável numérica, utilizando a regra: {:.2f}.
 
 Observação: Desenvolva o programa de uma forma que, se alterarmos os valores das variáveis, ele altere automaticamente a exibição do texto na tela, atualizando os valores.
-"""
+*/
 
-total_conta = 82.57
-valor_pago = 100
-troco = valor_pago - total_conta
+using System;
 
-print("Total do troco que você deve receber é R$ {:.2f}".format(troco))
+class programa
+{
+    static void Main(string[] args)
+    {
+        double total_conta = 82.57;
+        double valor_pago = 100;
+        
+        double troco = valor_pago - total_conta;
 
+        Console.WriteLine("Troco: " + troco.ToString("C2"));
+        Console.WriteLine("Troco formatado: " + troco.ToString("C"));
+        Console.WriteLine("O total da conta foi de " + total_conta.ToString("C2") + ", você pagou " + valor_pago.ToString("C2") + " e o seu troco foi de " + troco.)
+
+    }
+}
