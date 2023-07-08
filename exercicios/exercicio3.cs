@@ -11,9 +11,20 @@ anos de idade e é do gênero {genero}.
 Já pensou no que você fará no seu aniversário de {idade + 1} anos?".
 """
 
-let Nome = "Anderson"
-let Idade = 21
-let Genero = "M"
-let Aniversario = 22
+using System;
 
-printfn "Olá, %s, você possui %i anos de idade e é do gênero %s." Nome Idade Genero
+namespace Input_de_Informações
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            let Nome = "Anderson"
+            let Idade = 21
+            let Genero = "M"
+            let Aniversario = 22
+
+            printfn "Olá, %s, você possui %i anos de idade e é do gênero %s." Nome Idade Genero 
+        }   
+    }    
+}
