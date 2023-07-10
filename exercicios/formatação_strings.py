@@ -54,3 +54,14 @@ print('{:+f}'.format(pi))
 
 print('{:=^30.2f}'.format(-pi))
 
+# DATAS E HORAS
+from datetime import datetime
+
+agora = datetime.now()
+
+print('{:%m}'.format(agora)) #mes 
+print('{:%y}'.format(agora)) #ano
+print('{:%d}'.format(agora)) #dia 
+print('{:%m-%y}'.format(agora)) #mes e ano
+print('{:%d-%m-%y}'.format(agora)) #mes 
+print('{:%c}'.format(agora)) #tudo
