@@ -52,5 +52,5 @@ print('{:4%}'.format(pi))
 
 print('{:+f}'.format(pi))
 
-print('{:-f}'.format(pi))
+print('{:=^30.2f}'.format(-pi))
 
