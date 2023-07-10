@@ -27,9 +27,30 @@ print(f'{nome.upper()=!r:\n^15}')
 
 #Conversão de bases 'Numeros'
 
-f'{16:b}' # '1111'
-f'{15:o}' # '17'
-f'{15:d}' #'15'
-f'{15:x}' #'x'
-f'{15:X}' #'X'
+f'{15:b}' # '1111' binário
+f'{15:o}' # '17' octadecimal
+f'{15:d}' #'15' decimal 
+f'{15:x}' #'x' exadecimal 
+f'{15:X}' #'X' || 
+
+
+#Exemplos 
+from math import pi
+
+print('{:10.4f}'.format(pi))
+
+
+print('{:^10.4f}'.format(pi))
+
+
+print('{:-10.4f}'.format(pi))
+
+
+print('{:f}'.format(pi))
+
+print('{:4%}'.format(pi))
+
+print('{:+f}'.format(pi))
+
+print('{:-f}'.format(pi))
 
