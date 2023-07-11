@@ -7,16 +7,18 @@ Dificuldade: Principiante
 
 1 - Uma catapulta lançou 300 pedras em 5 baterias de 15 minutos, cada.
 2 - Quantas pedras ela lançaria em 8 baterias de 7 minutos, cada?
-3 - Crie um programa que receba os valores base para que a aplicação funcione de forma que, se alterarmos o número de bateriais e a duração de cada bateria, o programa funcione sem precisar de mais modificações.
+3 - Crie um programa que receba os valores base para que a aplicação 
+funcione de forma que, se alterarmos o número de bateriais e a
+ duração de cada bateria, o programa funcione sem precisar de mais modificações.
 """
 
-qtd_de_baterias = 5
-lacamento = 300 
-tempo = 15
+def calcular_pedras(num_baterias, duracao_bateria):
+    total_pedras = num_baterias * duracao_bateria * 4
+    return total_pedras
 
+# Exemplo de uso
+num_baterias = int(input("Digite o número de baterias: "))
+duracao_bateria = int(input("Digite a duração de cada bateria (em minutos): "))
 
-def catapulta(qtd_de_baterias, lacamento, tempo):
-    pedras_por_minuto = lacamento / (qtd_de_baterias * tempo)
-    return pedras_por_minuto
-
-print(catapulta(tempo=tempo, qtd_de_baterias=qtd_de_baterias, lacamento=lacamento))
+total_pedras = calcular_pedras(num_baterias, duracao_bateria)
+print("A catapulta lançaria um total de", total_pedras, "pedras.")
