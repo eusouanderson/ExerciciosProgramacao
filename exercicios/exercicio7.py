@@ -13,3 +13,13 @@ Exemplo:
 Supondo que o primeiro número seja 72 e o segundo número seja 10, o resultado será 70.
 Se o primeiro número for 97 e o segundo número for 10, o resultado será 90.
 """
+
+import math
+
+
+numero = float(input("Digite o primeiro: "))
+multiplo = float(input("Digite o segundo número: "))
+
+resultado = math.floor(numero / multiplo) * multiplo
+
+print("O resultado arredondado é: " , resultado)
